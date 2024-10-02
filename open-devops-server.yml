@@ -1,0 +1,32 @@
+mysql_s:
+  - name: stree
+    addr: "root:123123@tcp(192.168.3.200:3306)/open_devops?charset=utf8&parseTime=True&loc=Asia%2FShanghai"
+    max: 128
+    idel: 16
+    debug: false
+
+
+index_modules:
+  - resource_name: resource_host
+    enable: true
+    modulus: 0
+    num: 0
+rpc_addr: 192.168.3.200:8081
+http_addr: :8082
+
+public_cloud_sync:
+  enable: false
+#  enable: true
+
+
+
+prober_targets:
+  #  - prober_type: icmp
+  #    region: region1
+  #    target:
+  #      - "1.1.1.1"
+  #      - "2.2.2.2"
+#  - prober_type: http
+#    region: region2
+#    target:
+#      - http://yourdomain.com/api/xxx/xxx

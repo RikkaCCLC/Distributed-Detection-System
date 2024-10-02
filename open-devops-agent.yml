@@ -1,0 +1,22 @@
+rpc_server_addr: 192.168.3.200:8081
+http_addr: 0.0.0.0:8087
+log_level: INFO
+enable_info_collect_and_report: false # 采集信息上报的开关
+enable_log_job: true # 开启logjob的
+#log_strategies:
+#  - metric_name: log_containerd_total
+#    metric_help: /var/log/messages 中的 containerd日志 total
+#    file_path: /var/log/messages
+#    pattern:  ".*containerd.*"
+#    func: cnt
+#    tags:
+#      level: ".*level=(.*?) .*"
+#  - metric_name: ngx_acc_code
+#    metric_help: nginx code avg
+#    file_path: /var/log/nginx/access.log
+#    pattern:  '.*\[code=(.*?)\].*'
+#    func: avg
+job:
+  metadir: ./meta
+  interval: 2
+region: bj01
