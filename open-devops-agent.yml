@@ -1,5 +1,5 @@
-rpc_server_addr: 192.168.3.200:8081
-http_addr: 0.0.0.0:8087
+rpc_server_addr: 192.168.3.200:8082
+http_addr: 0.0.0.0:8085
 log_level: INFO
 enable_info_collect_and_report: false # 采集信息上报的开关
 enable_log_job: true # 开启logjob的
