@@ -1,16 +1,16 @@
 mysql_s:
   - name: stree
     addr: "root:123123@tcp(192.168.3.200:3306)/open_devops?charset=utf8&parseTime=True&loc=Asia%2FShanghai"
-    max: 128
-    idel: 18
+    max: 256
+    idel: 21
     debug: false
 
 
 index_modules:
   - resource_name: resource_host
     enable: true
-    modulus: 0
-    num: 0
+    modulus: 1
+    num: 2
 rpc_addr: 192.168.3.200:8081
 http_addr: :8082
 
