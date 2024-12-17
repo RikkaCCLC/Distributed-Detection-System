@@ -331,7 +331,7 @@ CREATE TABLE `task_meta`
 
 
 def task_query():
-    uri = 'http://localhost:8082/api/v1/task'
+    uri = 'http://localhost:8082/api/v1/task1'
     res = requests.get(uri, headers=JSON_H)
     print(curlify.to_curl(res.request))
     print(res.status_code)
