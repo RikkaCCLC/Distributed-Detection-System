@@ -18,5 +18,5 @@ enable_log_job: true # 开启logjob的
 #    func: avg
 job:
   metadir: ./meta
-  interval: 2
+  interval: 4
 region: bj01
