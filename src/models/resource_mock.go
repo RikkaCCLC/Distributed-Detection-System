@@ -50,7 +50,7 @@ func AddResourceHostTest() {
 	mTag := make(map[string]string)
 	err = json.Unmarshal(rhDb.Tags, &mTag)
 
-	ipsN := make([]string, 0)
+	ipsN := make([]string, 3)
 	err = json.Unmarshal(rhDb.PrivateIps, &ipsN)
 
 	fmt.Println(mTag, err)
