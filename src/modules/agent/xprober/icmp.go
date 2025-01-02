@@ -45,7 +45,7 @@ func ProbeICMP(lt *LocalTarget) []*common.ProberResultOne {
 	pingCmd := fmt.Sprintf("/usr/bin/timeout --signal=KILL 15s  /usr/bin/ping -q -A -f -s 100 -W 1000 -c 50 %s", lt.Addr)
 	level.Info(lt.logger).Log("msg", "LocalTarget  ProbeICMP start ...", "uid", lt.Uid(), "pingcmd", pingCmd)
 	success, outPutStr := execCmd(pingCmd, lt.logger)
-	prs := make([]*common.ProberResultOne, 0)
+	prs := make([]*common.ProberResultOne, 3)
 
 	var (
 		pkgdLine    string
