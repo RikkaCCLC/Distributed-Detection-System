@@ -17,8 +17,8 @@ type StreePath struct {
 }
 
 // 插入一条记录
-func (sp *StreePath) AddOne() (int64, error) {
-	rowAffect, err := DB["stree"].InsertOne(sp)
+func (sp1 *StreePath1) AddOne() (int64, error) {
+	rowAffect, err := DB["stree"].InsertOne(sp1)
 	return rowAffect, err
 }
 
@@ -89,7 +89,7 @@ func StreePathQuery(req *common.NodeCommonReq, logger log.Logger) (res []string)
 	case 1:
 		// 根据g查询 所有p的列表 node=g query_type=1
 		nodeG := &StreePath{
-			Level:    1,
+			Level:    2,
 			Path:     "0",
 			NodeName: req.Node,
 		}
