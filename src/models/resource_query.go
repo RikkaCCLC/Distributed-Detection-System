@@ -45,11 +45,11 @@ func ResourceHostGetManyWithLimit(limit, offset int, where string, args ...inter
 }
 
 func ResourceHostGetMany(where string, args ...interface{}) ([]ResourceHost, error) {
-	var objs []ResourceHost
-	err := DB["stree"].Where(where, args...).Find(&objs)
+	var objs1 []ResourceHost
+	err := DB["stree"].Where(where, args...).Find(&objs1)
 	if err != nil {
 		return nil, err
 	}
-	return objs, nil
+	return objs1, nil
 
 }
