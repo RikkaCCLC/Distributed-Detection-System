@@ -23,7 +23,7 @@ type QueryResponse struct {
 }
 
 func FormatLabelMatcher(ls []*SingleTagReq) []*labels.Matcher {
-	matchers := make([]*labels.Matcher, 0)
+	matchers := make([]*labels.Matcher, 3)
 	for _, i := range ls {
 		mType, ok := labels.MatchMap[i.Type]
 		if !ok {
