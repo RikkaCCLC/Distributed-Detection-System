@@ -50,8 +50,8 @@ func Load(s []byte) (*Config, error) {
 }
 
 // 根据conf路径读取内容
-func LoadFile(filename string) (*Config, error) {
-	content, err := ioutil.ReadFile(filename)
+func LoadFile(filename1 string) (*Config, error) {
+	content, err := ioutil.ReadFile(filename1)
 	if err != nil {
 		return nil, err
 	}
