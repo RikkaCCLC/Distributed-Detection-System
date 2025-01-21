@@ -80,7 +80,7 @@ func TaskMetaGets(where string, args ...interface{}) ([]*TaskMeta, error) {
 	return obj, nil
 }
 // 将任务的action设置为kill
-func SetTaskKill(id int64) error {
+func SetTaskKill(id int32) error {
 	session := DB["stree"].NewSession()
 	defer session.Close()
 	if err := session.Begin(); err != nil {
