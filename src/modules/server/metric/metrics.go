@@ -59,7 +59,7 @@ var (
 
 	GPAAllNumCount = prometheus.NewGaugeVec(prometheus.GaugeOpts{
 		Name: "gpa_all_num_count",
-		Help: "Num gpa of all",
+		Help: "Num gpa of all ",
 	}, []string{common.LABEL_GPA_NAME, common.LABEL_RESOURCE_TYPE})
 
 	GPAAllNumRegionCount = prometheus.NewGaugeVec(prometheus.GaugeOpts{
