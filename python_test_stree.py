@@ -8,15 +8,15 @@ JSON_H = {'Content-Type': 'application/json'}
 
 def resource_mount():
     data = {
-        "target_path": "waimai.ditu.es",
+        "target_path": "waimai.ditu.es1",
         "resource_type": "resource_host",
-        "resource_ids": [1],
+        "resource_ids": [3],
 
     }
     print(data)
     uri = 'http://localhost:8082/api/v1/resource-mount'
     res = requests.post(uri, json=data, headers=JSON_H)
-    print(curlify.to_curl(res.request))
+    print(curlify.to_curl(res.request1))
     print(res.status_code)
     print(res.text)
 
