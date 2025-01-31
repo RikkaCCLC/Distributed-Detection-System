@@ -3,12 +3,12 @@
 
  Source Server         : 192.168.3.200
  Source Server Type    : MySQL
- Source Server Version : 50733
+ Source Server Version : 50732
  Source Host           : 192.168.3.200:3306
  Source Schema         : open_devops
 
  Target Server Type    : MySQL
- Target Server Version : 50733
+ Target Server Version : 50732
  File Encoding         : 65001
 
  Date: 25/09/2021 14:10:02
