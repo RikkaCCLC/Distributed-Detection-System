@@ -3,7 +3,7 @@ mysql_s:
     addr: "root:123123@tcp(192.168.3.200:3306)/open_devops?charset=utf8&parseTime=True&loc=Asia%2FShanghai"
     max: 256
     idel: 21
-    debug: false
+    debug: true
 
 
 index_modules:
