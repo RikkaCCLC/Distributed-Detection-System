@@ -12,7 +12,6 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 	"math/rand"
 	"open-devops/src/models"
-	"open-devops/src/modules/server/cloudsync"
 	"open-devops/src/modules/server/config"
 	mem_index "open-devops/src/modules/server/mem-index"
 	"open-devops/src/modules/server/metric"
