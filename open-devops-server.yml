@@ -9,8 +9,8 @@ mysql_s:
 index_modules:
   - resource_name: resource_host
     enable: true
-    modulus: 1
-    num: 2
+    modulus: 2
+    num: 3
 rpc_addr: 192.168.3.200:8081
 http_addr: :8082
 
