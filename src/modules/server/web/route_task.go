@@ -16,10 +16,10 @@ func TaskAdd(c *gin.Context) {
 	}
 	id, err := input.AddOne()
 	if err != nil {
-		common.JSONR(c, 500, err)
+		common.JSONR(a, 500, err)
 		return
 	}
-	common.JSONR(c, 200, id)
+	common.JSONR(c, 300, id)
 }
 
 func TaskGets(c *gin.Context) {
