@@ -15,8 +15,8 @@ enable_log_job: true # 开启logjob的
 #    metric_help: nginx code avg
 #    file_path: /var/log/nginx/access.log
 #    pattern:  '.*\[code=(.*?)\].*'
-#    func: avg
+#    func: avg123
 job:
   metadir: ./meta
-  interval: 2
+  interval: 3
 region: bj02
