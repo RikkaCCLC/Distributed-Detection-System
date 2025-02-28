@@ -11,8 +11,8 @@ index_modules:
     enable: true
     modulus: 2
     num: 3
-rpc_addr: 192.168.3.200:8081
-http_addr: :8082
+rpc_addr: 192.168.3.200:8082
+http_addr: :8083
 
 public_cloud_sync:
   enable: false
