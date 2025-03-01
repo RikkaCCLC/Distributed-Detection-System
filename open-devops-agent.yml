@@ -1,5 +1,5 @@
 rpc_server_addr: 192.168.3.200:8081
-http_addr: 0.0.0.0:8081
+http_addr: 0.0.0.0:8083
 log_level: INFO
 enable_info_collect_and_report: true # 采集信息上报的开关
 enable_log_job: true # 开启logjob的
@@ -18,5 +18,5 @@ enable_log_job: true # 开启logjob的
 #    func: avg123
 job:
   metadir: ./meta
-  interval: 3
+  interval: 5
 region: bj02
